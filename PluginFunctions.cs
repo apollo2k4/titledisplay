@@ -153,7 +153,7 @@ namespace TitleDisplay.Resources
                     if (m_Options.ShowModifyDate)
                     {
                         var lastModified = System.IO.File.GetLastWriteTime(m_host.Database.IOConnectionInfo.Path);
-                        WindowText = WindowText + " (" + lastModified.ToString("dd/MM/yyyy hh:mm:ss") + ")";
+                        WindowText = WindowText + " (" + lastModified.ToString("dd/MM/yyyy HH:mm:ss") + ")";
                     }
 
                     if (m_host.Database.Modified) lMaxTitleLen = lMaxTitleLen - 1;
